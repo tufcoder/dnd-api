@@ -1,0 +1,185 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "DnD API",
+    "description": "DnD Attributes Generator API",
+    "version": "1.0.0",
+    "contact": {
+      "email": "oswaldogpc@gmail.com"
+    }
+  },
+  "paths": {
+    "/attributes/history": {
+      "get": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "List History",
+        "description": "List Attributes Generated History",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/attributes/4d6": {
+      "post": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Roll 4d6",
+        "description": "Create attributes with rule 4d6",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "Object",
+                "properties": {
+                  "maximum_attributes": {
+                    "type": "number"
+                  },
+                  "minimal_score": {
+                    "type": "number"
+                  }
+                },
+                "example": {
+                  "maximum_attributes": 6,
+                  "minimal_score": 12
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/attributes/1d10plus8": {
+      "post": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Roll 1d10 plus 8",
+        "description": "Create attributes with rule 1d10 plus 8",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "Object",
+                "properties": {
+                  "maximum_attributes": {
+                    "type": "number"
+                  },
+                  "minimal_score": {
+                    "type": "number"
+                  }
+                },
+                "example": {
+                  "maximum_attributes": 6,
+                  "minimal_score": 12
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/attributes/1d8plus10": {
+      "post": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Roll 1d8 plus 10",
+        "description": "Create attributes with rule 1d8 plus 10",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "Object",
+                "properties": {
+                  "maximum_attributes": {
+                    "type": "number"
+                  },
+                  "minimal_score": {
+                    "type": "number"
+                  }
+                },
+                "example": {
+                  "maximum_attributes": 6,
+                  "minimal_score": 12
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/attributes/3d6": {
+      "post": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Roll 3d6",
+        "description": "Create attributes with rule 3d6",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "Object",
+                "properties": {
+                  "maximum_attributes": {
+                    "type": "number"
+                  },
+                  "minimal_score": {
+                    "type": "number"
+                  }
+                },
+                "example": {
+                  "maximum_attributes": 6,
+                  "minimal_score": 12
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    }
+  }
+}
