@@ -26,6 +26,14 @@ For exemple, to generate scores using the rule 4d6 use the endpoint http://local
 * Endpoint:
   * /attributes
 
+## API DOC
+
+### SWAGGER
+
+Launch the application and access the URL:
+
+http://localhost:1337/api/
+
 ## Stack
 
 * NodeJS
