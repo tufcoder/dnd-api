@@ -6,6 +6,8 @@ For exemple, to generate scores using the rule 4d6 use the endpoint http://local
 
 ## Routes
 
+![routes](https://github.com/tufcoder/dnd-api/blob/master/assets/api-routes.png)
+
 ### POST
 
 * Generates new attributes and returns the scores
@@ -33,6 +35,8 @@ For exemple, to generate scores using the rule 4d6 use the endpoint http://local
 Launch the application and access the URL:
 
 http://localhost:1337/api/
+
+![swagger](https://github.com/tufcoder/dnd-api/blob/master/assets/api-swagger.png)
 
 ## Stack
 
