@@ -1,0 +1,9 @@
+/* This file is used only to "see" the hexa colors to put in the default.ts */
+
+:root {
+  --black-200: #202020;
+  --white-200: #e2e2e2;
+  --orange: #a16b05;
+  --green: #05af05;
+  --green-200: #037e03;
+}
