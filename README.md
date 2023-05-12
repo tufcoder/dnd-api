@@ -2,9 +2,24 @@
 
 I will provide an API to generate characters attributes for Dungeons and Dragons RPG.  
 By default, the application is running on `port 1337`. You can change the port in the file `.env`.  
-For exemple, to generate scores using the rule 4d6 use the endpoint http://localhost:1337/attributes/4d6.
+For exemple, to generate scores using the rule 4d6 use the endpoint <http://localhost:1337/attributes/4d6>.
 
-## Routes
+## How execute the code
+
+> ❗ Important
+>
+> The **Frontend** only works **IF** the backend is initialized!
+>
+
+1. Clone this repository `git clone git@github.com:tufcoder/dnd-api.git`.
+2. In your terminal, access the folder `~/dnd-api/backend`.
+3. Type `npm i` to install/update the dependencies;
+4. Start the server, type `npm run dev` and await the message `Server is running`.
+5. Open another terminal, access the folder `~/dnd-api/frontend` and execute the step 3.
+6. Start the app with `npm run dev` and await from the Vite local address, something like `http://localhost:5173/`.
+7. Click in one button to generate the ability scores using the backend API.
+
+## Backend Routes
 
 ![routes](https://github.com/tufcoder/dnd-api/blob/master/assets/api-routes.png)
 
@@ -34,12 +49,19 @@ For exemple, to generate scores using the rule 4d6 use the endpoint http://local
 
 Launch the application and access the URL:
 
-http://localhost:1337/api/
+<http://localhost:1337/api/>
 
 ![swagger](https://github.com/tufcoder/dnd-api/blob/master/assets/api-swagger.png)
 
-## Stack
+## Stacks
 
 * NodeJS
 * Express
 * TypeScript
+* React
+
+## Frontend App
+
+That's a simple app to test the API endpoints.
+
+![app](https://github.com/tufcoder/dnd-api/blob/master/assets/frontend.png)
