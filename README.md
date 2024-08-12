@@ -2,7 +2,7 @@
 
 I will provide an API to generate characters attributes for Dungeons and Dragons RPG.  
 By default, the application is running on `port 1337`. You can change the port in the file `.env`.  
-For exemple, to generate scores using the rule 4d6 use the endpoint <http://localhost:1337/attributes/4d6>.
+For exemple, to generate scores using the rule 4d6 use the endpoint POST <http://localhost:1337/attributes/4d6>.
 
 ## How execute the code
 
